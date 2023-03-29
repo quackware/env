@@ -1,0 +1,14 @@
+export const ENV_KEYS = [
+  "DENO_DEPLOY_TOKEN",
+  "GITHUB_TOKEN",
+  "DENO_DEPLOY_TOKEN",
+  "ENDPOINT",
+  "BUCKET",
+  "ACCESS_KEY_ID",
+  "SECRET_ACCESS_KEY",
+  "CLOUDFLARE_AUTH_EMAIL",
+  "CLOUDFLARE_ACCOUNT_ID",
+  "CLOUDFLARE_GLOBAL_API_KEY",
+  "HETZNER_API_TOKEN",
+] as const;
+export type KnownEnvKey = typeof ENV_KEYS[number];
