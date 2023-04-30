@@ -1,7 +1,3 @@
-<h1 align="center">
-  <a href="https://github.com/quackware/env">
-    <code>@quackware/env</code>
-  </a>
-</h1>
+# @quackware/env
 
-<p align="center">Environment Utilities</p>
+Environment Utilities

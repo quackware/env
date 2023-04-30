@@ -6,4 +6,10 @@ Deno.test("envs", async (t) => {
     assertEquals(isValidEnvironment("foo"), false);
     assertEquals(isValidEnvironment("test"), true);
   });
+
+  await t.step("VARIABLE_ENVIRONMENT_PREFIX", () => {
+    assertEquals(isValidEnvironment("pa"), false);
+    assertEquals(isValidEnvironment("pr"), true);
+    assertEquals(isValidEnvironment("pr-123"), true);
+  });
 });
